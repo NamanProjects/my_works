@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Naman — Projects</title>
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="site-header">
+      <h1>My Projects</h1>
+      <p><span class="highlight">Collection of web projects and demos </span>— open any card to view the project.</p>
+    </header>
+
+    <!-- About button (opens modal) -->
+    <a href="https://namang013.github.io/Portfolio/"><button class="about-btn" id="aboutBtn" aria-haspopup="dialog" aria-controls="aboutModal" style="color:white;">About me</button></a>
+
+    <section class="grid" id="projectsGrid">
+      <!-- Project cards: update these paths if you move folders -->
+      <article class="card">
+        <a href="https://namanprojects.github.io/live.baps.kalol/" target="_blank">
+          <img src="/project.portfolio/live.baps.png" alt="Live BAPS Kalol">
+          <h3>live.baps.kalol</h3>
+          <p>Event / live webcast page.</p>
+        </a>
+      </article>
+      <article class="card">
+        <a href="https://namanprojects.github.io/baps.chatbot/" target="_blank">
+          <img src="/project.portfolio/baps.chatbot.png" alt="Baps.chatbot">
+          <h3>Akshar.Ai</h3>
+          <p>Spiritual guidance chatbot UI and demo.</p>
+        </a>
+      </article>
+
+      
+
+      <article class="card">
+        <a href="https://namanprojects.github.io/vastrasanghar/" target="_blank">
+          <img src="/project.portfolio/vastrasangar.png" alt="Vastrasangar" onerror="this.src='placeholder.png'">
+          <h3>vastrasangr.com</h3>
+          <p>Small ecommerce / product showcase.</p>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="https://namanprojects.github.io/portfolio.videoeditor/" target="_blank">
+          <img src="/project.portfolio/video.port.png" alt="Video Editor">
+          <h3>portfolio.videoeditor</h3>
+          <p>Video editor portfolio demo.</p>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="https://namanprojects.github.io/ldrp.notes/" target="_blank">
+          <img src="/project.portfolio/ldrp.note.png" alt="LDRP Notes" onerror="this.src='placeholder.png'">
+          <h3>ldrp.notes</h3>
+          <p>Semester notes hub (drive links).</p>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="https://namanprojects.github.io/naman.ai/" target="_blank">
+          <img src="/project.portfolio/namanai.png" alt="Naman.ai">
+          <h3>naman.ai</h3>
+          <p>Personal chatbot UI and demo.</p>
+        </a>
+      </article>
+        </a>
+      </article>
+
+    </section>
+
+    <footer class="site-footer">
+      <p>@Copyright © 2025 — Made by Naman
+      </p>
+    </footer>
+  </main>
+
+  <!-- Small inline script to redirect missing images to a placeholder inside this folder if available -->
+  <script>
+    document.querySelectorAll('img').forEach(img=>{
+      img.addEventListener('error', ()=>{
+        // keep path relative to this projects.html location
+        img.src = 'placeholder.png';
+      })
+    })
+  </script>
+</body>
+</html>
